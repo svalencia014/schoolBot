@@ -6,7 +6,7 @@ function sleep(ms) {
 }
 
 module.exports = {
-    name: 'verify',
+    name: 'verify', 
     description: 'Allows the User to verify',
     execute(message, args) {
         let memberTarget = message.guild.members.cache.get(message.author.id);
