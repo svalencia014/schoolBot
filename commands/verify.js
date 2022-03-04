@@ -22,7 +22,10 @@ module.exports = {
         collector.on('end', collected => {
             console.log(`Collected ${collected.size} items`);
             email = collected;
+            console.log(collected);
+            message.channel.send("Thank you. Please wait a moment while I email you a code.");
         });
+
         
 
         var code = Math.floor(100000 + Math.random() * 900000)
