@@ -47,8 +47,12 @@ module.exports = {
             //generate verification code
             const code = Math.floor(100000 + Math.random() * 900000);
             console.log(`Verification code is ${code}`);
-
-            const msg = {
+            
+            //check that domain is @ftstudent.org
+            const checkEmail = userEmail.replace('@', ' ');
+            console.log(checkEmail);
+            
+            /*const msg = {
             to: `${userEmail}`, // Change to your recipient
             from: 'svalencia@ftstudent.org', // Change to your verified sender
             subject: 'FT Students Discord Verification',
@@ -114,7 +118,7 @@ module.exports = {
                 } else {
                     message.channel.send("There was an error! Please message @BifocalCanvas#0701 for help.")
                 }
-            })
+            })*/
         });
     }
 }
