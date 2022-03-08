@@ -33,5 +33,4 @@ client.on("message", (message) => {
         message.channel.send("Invalid Command, Try again!")
     }
 });
-
-client.login('token');
+client.login('OTI0NTEyNTMwNzkyMDU0ODE0.YcfpYw.0C3fg7pbWQb6uWTtVsX06q0yHkM');
