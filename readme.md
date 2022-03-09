@@ -10,4 +10,7 @@ or
 `cd schoolBot`
 
 3. Install packages
-`sudo ./setup.sh`
+`./setup.sh`
+
+4. Run with node
+`node .`
