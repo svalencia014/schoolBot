@@ -2,7 +2,7 @@
 Good for verifying a user's email before giving access to the server, and giving roles for 7th-12th grade.
 ### Instructions
 1. Copy the repo
-`git clone svalencia014/schoolBot` 
+`git clone https://github.com/svalencia014/fcBot.git` 
 or
 `gh repo clone svalencia014/schoolBot`
 
