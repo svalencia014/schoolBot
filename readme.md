@@ -9,8 +9,9 @@ or
 2. Go into the directory
 `cd schoolBot`
 
-3. Install packages
-`./setup.sh`
+3. Install packages<br>
+* Linux & Mac:  `./setup.sh`
+* Windows: `Coming soon`
 
 4. Run with node
 `node .`
