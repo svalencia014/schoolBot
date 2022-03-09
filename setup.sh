@@ -1,2 +1,2 @@
-npm install discord.js
-npm install @sendgrid/mail
+sudo npm install discord.js
+sudo npm install @sendgrid/mail
