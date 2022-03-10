@@ -4,9 +4,9 @@ Good for verifying a user's email before giving access to the server, and giving
 1. Copy the repo
 `git clone https://github.com/svalencia014/fcBot.git` 
 or<br>
-`gh repo clone svalencia014/schoolBot`
+`gh repo clone svalencia014/schoolBot` <br>
 
-2. Go into the directory
+2. Go into the directory <br>
 `cd schoolBot`
 
 3. Install packages<br>
@@ -20,7 +20,7 @@ or<br>
 `line 3, sgMail.setApiKey('Your api key here');`
 
 6. Skim through verify.js and look for any "Discord name here" or "your email" and replace them accordingly <br>
-`lines 18, 27, 51, 55, 58, 116, and 120`
+`lines: 18, 27, 51, 55, 58, 116, and 120`
 
 7. Run with node <br>
 `node .`
