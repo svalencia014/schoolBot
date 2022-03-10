@@ -11,9 +11,9 @@ or<br>
 
 3. Install packages<br>
 * Linux & Mac:  `./setup.sh`
-* Windows: `Coming soon`
+* Windows: `setup.bat`
 
-4. Edit the last line of bot.js with your discord token ([discord.com/developers](https://discord.com/developers))<br>
+4. Edit the last line of bot.js with your discord token on the [discord developer portal](https://discord.com/developers) <br>
 `line 36, client.login("your token here");` 
 
 5. Sign up for a sendgrid account and input your api token in /commands/verify.js(Found on the integration page, where you send your first email) <br>
