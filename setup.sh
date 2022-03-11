@@ -1,2 +1,2 @@
-export MJ_APIKEY_PUBLIC='7b48f2339cfad461297b27325ee37746'
-export MJ_APIKEY_PRIVATE='a8a22ce9132f84460bb77cd129c84909'
+sudo npm install discord.js
+sudo npm install @sendgrid/mail

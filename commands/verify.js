@@ -15,7 +15,7 @@ module.exports = {
 
 
         //define roles
-        let flashRole = message.guild.roles.cache.find(roles => roles.name === 'Flash');
+        let flashRole = message.guild.roles.cache.find(roles => roles.name === 'Flash');        //main server role, if not given, user won't see the server
         let sevenRole = message.guild.roles.cache.find(roles => roles.name === '7th grade');
         let eightRole = message.guild.roles.cache.find(roles => roles.name === '8th grade');
         let freshRole = message.guild.roles.cache.find(roles => roles.name === 'freshman');
