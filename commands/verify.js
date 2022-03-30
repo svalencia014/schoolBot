@@ -1,6 +1,6 @@
 const { Client, Intents } = require('discord.js');
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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')
+sgMail.setApiKey('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')
 email = null;
 userEmail = null;
 function sleep(ms) {
