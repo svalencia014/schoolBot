@@ -2,6 +2,20 @@ const Discord = require("discord.js");
 const { Client, Intents } = require("discord.js");
 const fs = require("fs");
 
+//setup sentry
+const Sentry = require("@sentry/node");
+const Tracing = require("@sentry/tracing");
+
+Sentry.init({
+  dsn: "https://2e6aa87421a447c79bcda0734438e398@o1203317.ingest.sentry.io/6333100",
+  tracesSampleRate: 1.0,
+});
+
+const transaction = Sentry.startTransaction({
+  op: "test",
+  name: "My First Test Transaction",
+});
+
 const client = new Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 
 const prefix = "-";
