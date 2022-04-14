@@ -3,8 +3,8 @@ const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(
   "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"
 );
-email = null;
-userEmail = null;
+let email = null;
+let userEmail = null;
 function sleep(ms) {
   //Add sleep function like in python
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -62,9 +62,9 @@ module.exports = {
     });
     collector.on("end", (collected) => {
       console.log(`Collected ${collected.size} items`);
-      const email = collected.first();
+      email = collected.first();
       console.log(`Email for ${memberTarget} is ${email.content}`);
-      const userEmail = email.content;
+      userEmail = email.content;
       message.channel.send(
         "Thank you. Please wait a moment while I email you a code."
       );
