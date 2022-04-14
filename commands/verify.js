@@ -13,28 +13,28 @@ module.exports = {
   name: "verify",
   description: "Allows the User to verify",
   execute(message, args) {
-    let memberTarget = message.guild.members.cache.get(message.author.id);
+    const memberTarget = message.guild.members.cache.get(message.author.id);
 
     //define roles
-    let flashRole = message.guild.roles.cache.find(
+    const flashRole = message.guild.roles.cache.find(
       (roles) => roles.name === "Flash"
     ); //main server role, if not given, user won't see the server
-    let sevenRole = message.guild.roles.cache.find(
+    const sevenRole = message.guild.roles.cache.find(
       (roles) => roles.name === "7th grade"
     );
-    let eightRole = message.guild.roles.cache.find(
+    const eightRole = message.guild.roles.cache.find(
       (roles) => roles.name === "8th grade"
     );
-    let freshRole = message.guild.roles.cache.find(
+    const freshRole = message.guild.roles.cache.find(
       (roles) => roles.name === "freshman"
     );
-    let sophmoreRole = message.guild.roles.cache.find(
+    const sophmoreRole = message.guild.roles.cache.find(
       (roles) => roles.name === "sophmore"
     );
-    let juniorRole = message.guild.roles.cache.find(
+    const juniorRole = message.guild.roles.cache.find(
       (roles) => roles.name === "junior"
     );
-    let seniorRole = message.guild.roles.cache.find(
+    const seniorRole = message.guild.roles.cache.find(
       (roles) => roles.name === "senior"
     );
 
