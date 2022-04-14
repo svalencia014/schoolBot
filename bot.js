@@ -49,4 +49,5 @@ client.on("message", (message) => {
     message.channel.send("Invalid Command, Try again!");
   }
 });
-client.login("haha");
+//client.login("OTI0NTEyNTMwNzkyMDU0ODE0.YcfpYw.rXzNspk3v5d3_PlzLviqpxuZLV8");
+client.login("hahaha");
