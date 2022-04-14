@@ -50,7 +50,7 @@ module.exports = {
 
     //collector stuff
     const filter = (message) =>
-      !message.author.bot || message.author == memberTarget;
+      !message.author.bot || message.author === memberTarget;
     const collector = message.channel.createMessageCollector({
       filter,
       max: 1,
@@ -109,7 +109,7 @@ module.exports = {
           const newCode = collected.first();
           console.log(`${memberTarget} entered ${newCode.content}`);
           const userCode = newCode.content;
-          if (userCode == code) {
+          if (userCode === code) {
             message.channel.send("Thank you for verifying.");
             memberTarget.roles.add(flashRole);
             message.channel.send("What grade are you in? (# only please!)");
@@ -126,32 +126,33 @@ module.exports = {
               const grade = collected.first();
               console.log(`${memberTarget} is in ${grade.content} grade`);
               const userGrade = grade.content;
-              if (userGrade == "7") {
+              //might switch to case statement
+              if (userGrade === "7") {
                 memberTarget.roles.add(sevenRole);
                 message.channel.send(
                   "You have been given access to the server plus the 7th grade role!"
                 );
-              } else if (userGrade == "8") {
+              } else if (userGrade === "8") {
                 memberTarget.roles.add(eightRole);
                 message.channel.send(
                   "You have been given access to the server plus the 8th grade role!"
                 );
-              } else if (userGrade == "9") {
+              } else if (userGrade === "9") {
                 memberTarget.roles.add(freshRole);
                 message.channel.send(
                   "You have been given access to the server plus the freshman role!"
                 );
-              } else if (userGrade == "10") {
+              } else if (userGrade === "10") {
                 memberTarget.roles.add(sophmoreRole);
                 message.channel.send(
                   "You have been given access to the server plus the sophmore role!"
                 );
-              } else if (userGrade == "11") {
+              } else if (userGrade === "11") {
                 memberTarget.roles.add(juniorRole);
                 message.channel.send(
                   "You have been given access to the server plus the junior role!"
                 );
-              } else if (userGrade == "12") {
+              } else if (userGrade === "12") {
                 memberTarget.roles.add(seniorRole);
                 message.channel.send(
                   "You have been given access to the server plus the senior role!"
