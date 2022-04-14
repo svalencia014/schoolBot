@@ -126,7 +126,7 @@ module.exports = {
               const grade = collected.first();
               console.log(`${memberTarget} is in ${grade.content} grade`);
               const userGrade = grade.content;
-							//might switch to case statement
+              //might switch to case statement
               if (userGrade === "7") {
                 memberTarget.roles.add(sevenRole);
                 message.channel.send(
