@@ -6,6 +6,7 @@ sgMail.setApiKey(
 email = null;
 userEmail = null;
 function sleep(ms) {
+  //Add sleep function like in python
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
