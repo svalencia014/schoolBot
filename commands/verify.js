@@ -50,8 +50,9 @@ module.exports = {
     sleep(5500);
 
     //collector stuff
-    const filter = (message) => //skipcq: JS-0123
-      !message.author.bot || message.author === memberTarget;
+    const filter = (
+      message //skipcq: JS-0123
+    ) => !message.author.bot || message.author === memberTarget;
     const collector = message.channel.createMessageCollector({
       filter,
       max: 1,
@@ -105,7 +106,8 @@ module.exports = {
           console.log(`Collected ${m.content}`);
         });
 
-        collector2.on("end", (collected) => { //skipcq: JS-0123
+        collector2.on("end", (collected) => {
+          //skipcq: JS-0123
           console.log(`Colelcted ${collected.size}`);
           const newCode = collected.first();
           console.log(`${memberTarget} entered ${newCode.content}`);
@@ -122,7 +124,8 @@ module.exports = {
             collector3.on("collect", (m) => {
               console.log(`Collected ${m.content}`);
             });
-            collector3.on("end", (collected) => { //skipcq: JS-0123
+            collector3.on("end", (collected) => {
+              //skipcq: JS-0123
               console.log(`Collected ${collected.size} items`);
               const grade = collected.first();
               console.log(`${memberTarget} is in ${grade.content} grade`);
