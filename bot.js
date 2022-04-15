@@ -11,7 +11,8 @@ Sentry.init({
   tracesSampleRate: 1.0,
 });
 
-const transaction = Sentry.startTransaction({ //skipcq: JS-0128
+const transaction = Sentry.startTransaction({
+  //skipcq: JS-0128
   op: "test",
   name: "My First Test Transaction",
 });

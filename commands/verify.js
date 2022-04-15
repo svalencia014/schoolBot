@@ -13,7 +13,8 @@ function sleep(ms) {
 module.exports = {
   name: "verify",
   description: "Allows the User to verify",
-  execute(message, args) { //skipcq: JS-0128
+  execute(message, args) {
+    //skipcq: JS-0128
     const memberTarget = message.guild.members.cache.get(message.author.id);
 
     //define roles
