@@ -1,17 +1,17 @@
 const Discord = require("discord.js");
-const { Client, Intents } = require("discord.js");
+const { Client, Intents } = require("discord.js"); //skipcq: JS-0128
 const fs = require("fs");
 
 //setup sentry
 const Sentry = require("@sentry/node");
-const Tracing = require("@sentry/tracing");
+const Tracing = require("@sentry/tracing"); //skipcq: JS-0128
 
 Sentry.init({
   dsn: "https://2e6aa87421a447c79bcda0734438e398@o1203317.ingest.sentry.io/6333100",
   tracesSampleRate: 1.0,
 });
 
-const transaction = Sentry.startTransaction({
+const transaction = Sentry.startTransaction({ //skipcq: JS-0128
   op: "test",
   name: "My First Test Transaction",
 });
