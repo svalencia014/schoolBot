@@ -1,4 +1,4 @@
-const { Client, Intents } = require("discord.js");
+const { Client, Intents } = require("discord.js"); //skipcq: JS-0128
 const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(
   "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"
